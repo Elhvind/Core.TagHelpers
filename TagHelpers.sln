@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "src\WebUI\WebUI.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagHelpers", "src\TagHelpers\TagHelpers.csproj", "{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagHelpers.UnitTests", "tests\TagHelpers.UnitTests\TagHelpers.UnitTests.csproj", "{3BAF398E-6190-49E9-B3C0-09A160957DB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAF398E-6190-49E9-B3C0-09A160957DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAF398E-6190-49E9-B3C0-09A160957DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAF398E-6190-49E9-B3C0-09A160957DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAF398E-6190-49E9-B3C0-09A160957DB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7007D90F-0245-46B2-A6AE-2F5699065409} = {8A340CA2-423B-4F89-9BC7-1FB8C0F86D38}
 		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E} = {8A340CA2-423B-4F89-9BC7-1FB8C0F86D38}
+		{3BAF398E-6190-49E9-B3C0-09A160957DB0} = {6D95168C-332C-4A8A-AA49-3268B371EC9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BD64871-A8F9-48F9-96B4-A7E12D637C80}
