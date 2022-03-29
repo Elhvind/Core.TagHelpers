@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C39CE36-70E0-4296-97E9-16B21A931A81}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{8A340CA2-423B-4F89-9BC7-1FB8C0F86D38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6D95168C-332C-4A8A-AA49-3268B371EC9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "src\WebUI\WebUI.csproj", "{7007D90F-0245-46B2-A6AE-2F5699065409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagHelpers", "src\TagHelpers\TagHelpers.csproj", "{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7007D90F-0245-46B2-A6AE-2F5699065409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7007D90F-0245-46B2-A6AE-2F5699065409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7007D90F-0245-46B2-A6AE-2F5699065409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7007D90F-0245-46B2-A6AE-2F5699065409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7007D90F-0245-46B2-A6AE-2F5699065409} = {8A340CA2-423B-4F89-9BC7-1FB8C0F86D38}
+		{FC1764EE-244D-4608-B74E-BF0F1AE66C7E} = {8A340CA2-423B-4F89-9BC7-1FB8C0F86D38}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BD64871-A8F9-48F9-96B4-A7E12D637C80}
+	EndGlobalSection
+EndGlobal
