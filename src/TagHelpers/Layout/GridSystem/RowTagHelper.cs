@@ -8,7 +8,7 @@ namespace TagHelpers.Layout.GridSystem;
 /// This padding is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side.
 /// Rows also support modifier classes to uniformly apply column sizing and gutter classes to change the spacing of your content.
 /// </summary>
-[HtmlTargetElement(tag: "row", ParentTag = "container")]
+[HtmlTargetElement(tag: "row", ParentTag = null)]
 [RestrictChildren(childTag: "column")]
 [OutputElementHint(outputElement: "div")]
 public class RowTagHelper : BootstrapTagHelperBase

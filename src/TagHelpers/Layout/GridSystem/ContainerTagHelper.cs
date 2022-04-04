@@ -7,8 +7,7 @@ namespace TagHelpers.Layout.GridSystem;
 /// Containers are used to contain, pad, and (sometimes) center the content within them.
 /// While containers can be nested, most layouts do not require a nested container.
 /// </summary>
-[HtmlTargetElement(tag: "container")]
-[RestrictChildren(childTag: "row")]
+[HtmlTargetElement(tag: "container", ParentTag = null)]
 [OutputElementHint(outputElement: "div")]
 public class ContainerTagHelper : BootstrapTagHelperBase
 {
@@ -23,9 +22,6 @@ public class ContainerTagHelper : BootstrapTagHelperBase
         output.TagName = "div";
         output.TagMode = TagMode.StartTagAndEndTag;
 
-        output.AddCssClasses(ClassNames.Containers.FixedWidth);
-
-        if (Fluid)
-            output.AddCssClasses(ClassNames.Containers.Fluid);
+        output.AddCssClasses(Fluid ? ClassNames.Containers.Fluid : ClassNames.Containers.FixedWidth);
     }
 }
