@@ -1,4 +1,4 @@
-﻿namespace TagHelpers;
+﻿namespace TagHelpers.Content;
 
 /// <summary>
 /// HTML defines six levels of headings, and these heading elements are H1, H2, H3, H4, H5, and H6.
