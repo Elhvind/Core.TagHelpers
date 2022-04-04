@@ -63,6 +63,37 @@ public static class ClassNames
         public const string BlockLevel = "btn-block";
     }
 
+    public static class ButtonGroups
+    {
+        /// <summary>
+        /// The default class for button-groups.
+        /// </summary>
+        public const string ButtonGroup = "btn-group";
+
+        /// <summary>
+        /// The default class for vertical button-groups.
+        /// </summary>
+        public const string VerticalButtonGroup = "btn-group-vertical";
+
+        /// <summary>
+        /// The class for large button-groups.
+        /// </summary>
+        public const string Large = "btn-group-lg";
+
+        /// <summary>
+        /// The class for small button-groups.
+        /// </summary>
+        public const string Small = "btn-group-sm";
+    }
+
+    public static class ButtonToolbars
+    {
+        /// <summary>
+        /// The default class for button-groups.
+        /// </summary>
+        public const string ButtonToolbar = "btn-toolbar";
+    }
+
     public static class Cols
     {
         public const string Col = "col";

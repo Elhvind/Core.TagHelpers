@@ -2,7 +2,7 @@
 
 namespace TagHelpers.Components.Buttons;
 
-[HtmlTargetElement(tag: "btn")]
+[HtmlTargetElement(tag: "btn", ParentTag = null)]
 public class ButtonTagHelper : BootstrapTagHelperBase
 {
     [HtmlAttributeName("size")]
