@@ -111,4 +111,10 @@ public static class ClassNames
         public const string Cols = "row-cols";
         public const string NoGutters = "no-gutters";
     }
+
+    public static class Spinners
+    {
+        public const string SpinnerBorder = "spinner-border";
+        public const string SpinnerGrow = "spinner-grow";
+    }
 }
