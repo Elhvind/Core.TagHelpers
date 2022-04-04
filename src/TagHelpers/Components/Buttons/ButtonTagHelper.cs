@@ -6,7 +6,7 @@ namespace TagHelpers.Components.Buttons;
 public class ButtonTagHelper : BootstrapTagHelperBase
 {
     [HtmlAttributeName("size")]
-    public ComponentSize Size { get; set; } = ComponentSize.Default;
+    public ButtonSize Size { get; set; } = ButtonSize.Default;
 
     [HtmlAttributeName("variant")]
     public ThemeColor Variant { get; set; } = ThemeColor.Primary;
@@ -52,11 +52,11 @@ public class ButtonTagHelper : BootstrapTagHelperBase
 
         switch (Size)
         {
-            case ComponentSize.Lg:
+            case ButtonSize.Large:
                 output.AddCssClasses(ClassNames.Buttons.Large);
                 break;
 
-            case ComponentSize.Sm:
+            case ButtonSize.Small:
                 output.AddCssClasses(ClassNames.Buttons.Small);
                 break;
         }

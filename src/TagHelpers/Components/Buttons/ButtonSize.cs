@@ -1,6 +1,6 @@
-﻿namespace TagHelpers;
+﻿namespace TagHelpers.Components.Buttons;
 
-public enum ComponentSize
+public enum ButtonSize
 {
     /// <summary>
     /// Default size.
@@ -10,10 +10,10 @@ public enum ComponentSize
     /// <summary>
     /// Large size.
     /// </summary>
-    Lg,
+    Large,
 
     /// <summary>
     /// Small size.
     /// </summary>
-    Sm,
+    Small
 }

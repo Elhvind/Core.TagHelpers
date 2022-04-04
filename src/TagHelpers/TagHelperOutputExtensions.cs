@@ -27,7 +27,7 @@ public static class TagHelperOutputExtensions
 
         var updatedClasses = new List<string>();
         updatedClasses.AddRange(existingClasses);
-        updatedClasses.AddRange(classes.Where(x => !string.IsNullOrWhiteSpace(x)));
+        updatedClasses.AddRange(classes.Where(x => !string.IsNullOrWhiteSpace(x) && !existingClasses.Contains(x)));
 
         output.Attributes.SetAttribute("class", string.Join(" ", updatedClasses));
     }

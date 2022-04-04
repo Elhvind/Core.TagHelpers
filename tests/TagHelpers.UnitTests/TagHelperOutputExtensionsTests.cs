@@ -30,28 +30,38 @@ public class TagHelperOutputExtensionsTests
         get
         {
             return new TheoryData<IReadOnlyCollection<string>, TagHelperAttributeList, TagHelperAttributeList>
-            {
                 {
-                    new List<string>(),
-                    new TagHelperAttributeList(),
-                    new TagHelperAttributeList()
-                },
-                {
-                    new List<string> { "", "", "" },
-                    new TagHelperAttributeList { { "class", "my-1" } },
-                    new TagHelperAttributeList { { "class", "my-1" } }
-                },
-                {
-                    new List<string> { "my-2", "", "" },
-                    new TagHelperAttributeList { { "class", "my-1" } },
-                    new TagHelperAttributeList { { "class", "my-1 my-2" } }
-                },
-                {
-                    new List<string> { "my-2", "my-3", "my-4" },
-                    new TagHelperAttributeList { { "class", "my-1" } },
-                    new TagHelperAttributeList { { "class", "my-1 my-2 my-3 my-4" } }
-                }
-            };
+                    {
+                        new List<string>(),
+                        new TagHelperAttributeList(),
+                        new TagHelperAttributeList()
+                    },
+                    {
+                        new List<string> { "", "", "" },
+                        new TagHelperAttributeList { { "class", "my-1" } },
+                        new TagHelperAttributeList { { "class", "my-1" } }
+                    },
+                    {
+                        new List<string> { "my-2", "", "" },
+                        new TagHelperAttributeList { { "class", "my-1" } },
+                        new TagHelperAttributeList { { "class", "my-1 my-2" } }
+                    },
+                    {
+                        new List<string> { "my-2", "my-3", "my-4" },
+                        new TagHelperAttributeList { { "class", "my-1" } },
+                        new TagHelperAttributeList { { "class", "my-1 my-2 my-3 my-4" } }
+                    },
+                    {
+                        new List<string> { "my-1", "", "" },
+                        new TagHelperAttributeList { { "class", "my-1" } },
+                        new TagHelperAttributeList { { "class", "my-1" } }
+                    },
+                    {
+                        new List<string> { "my-1", "my-2", "my-3" },
+                        new TagHelperAttributeList { { "class", "my-2 my-1" } },
+                        new TagHelperAttributeList { { "class", "my-2 my-1 my-3" } }
+                    },
+                };
         }
     }
 
