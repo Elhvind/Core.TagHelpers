@@ -12,6 +12,19 @@ public static class ClassNames
     /// </summary>
     public const string Disabled = "disabled";
 
+    public static class Badges
+    {
+        /// <summary>
+        /// The default class for badges.
+        /// </summary>
+        public const string Badge = "badge";
+
+        /// <summary>
+        /// Gives a badge a rounded look.
+        /// </summary>
+        public const string Pill = "badge-pill";
+    }
+
     public static class Buttons
     {
         /// <summary>

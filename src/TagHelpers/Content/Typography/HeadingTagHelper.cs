@@ -5,12 +5,22 @@ namespace TagHelpers.Content.Typography;
 [HtmlTargetElement(tag: "heading", ParentTag = null)]
 public class HeadingTagHelper : BootstrapTagHelperBase
 {
+    /// <summary>
+    /// The level of the rendered HTML heading element.
+    /// </summary>
     [HtmlAttributeName("level")]
     public HeadingLevel Level { get; set; } = HeadingLevel.H1;
 
+    /// <summary>
+    /// Imitates the heading level, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+    /// </summary>
     [HtmlAttributeName("imitate")]
     public bool Imitate { get; set; }
 
+    /// <summary>
+    /// Traditional heading elements are designed to work best in the meat of your page content.
+    /// When you need a heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style.
+    /// </summary>
     [HtmlAttributeName("display-level")]
     public DisplayLevel? DisplayLevel { get; set; }
 
