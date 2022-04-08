@@ -1,0 +1,44 @@
+﻿.box {
+    border: $border-width solid $border-color;
+    @include box-size(.75rem, 1.25rem, $font-size-base, $border-radius, $box-shadow);
+
+    &__header {
+        margin: 0;
+        border-bottom: $border-width solid $border-color;
+    }
+
+    &__body {
+        margin: 0;
+    }
+
+    &__footer {
+        margin: 0;
+        border-top: $border-width solid $border-color;
+    }
+
+    @each $color, $value in $theme-colors {
+        $root-class: #{&};
+
+        &--#{$color} {
+            border-color: $value;
+
+            #{$root-class}__header {
+                border-color: $value;
+                background-color: $value;
+                color: color-yiq($value);
+            }
+
+            #{$root-class}__footer {
+                border-color: $value;
+            }
+        }
+    }
+
+    &--sm {
+        @include box-size(.35rem, .75rem, $font-size-sm, $border-radius-sm, $box-shadow-sm);
+    }
+
+    &--lg {
+        @include box-size(1rem, 1.5rem, $font-size-lg, $border-radius-lg, $box-shadow-lg);
+    }
+}

@@ -1,0 +1,39 @@
+﻿.custom-scrollbar {
+    @include custom-scrollbar-size(8px, $border-radius);
+
+    &::-webkit-scrollbar {
+        &-track {
+            background-color: transparent;
+        }
+
+        &-thumb {
+            background-color: transparent;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    @include custom-scrollbar($color, $value);
+}
+
+.custom-scrollbar--sm {
+    @include custom-scrollbar-size(4px, $border-radius-sm);
+}
+
+.custom-scrollbar--lg {
+    @include custom-scrollbar-size(12px, $border-radius-lg);
+}
+
+.custom-scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}

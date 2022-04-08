@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\site.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TagHelpers\TagHelpers.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,9 @@
+﻿@function on-theme-color($key: 'primary') {
+    @if(map-has-key($on-theme-colors, $key)) {
+        @return map-get($on-theme-colors, $key);
+    }
+    @else {
+        $color: map-get($theme-colors, $key);
+        @return color-yiq($color);
+    }
+}

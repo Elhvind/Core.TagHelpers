@@ -1,0 +1,187 @@
+﻿// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-caret: true;
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-prefers-reduced-motion-media-query: true;
+$enable-hover-media-query: false;
+$enable-grid-classes: true;
+$enable-pointer-cursor-for-buttons: true;
+$enable-print-styles: true;
+$enable-responsive-font-sizes: false;
+$enable-validation-icons: true;
+$enable-deprecation-messages: true;
+
+
+// Color system
+//
+//
+
+// Grays
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+// Colors
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+// Settings
+$theme-color-interval: 8%;
+$yiq-contrasted-threshold: 150;
+$yiq-text-dark: $gray-900;
+$yiq-text-light: $white;
+
+// Theme
+$primary: #dd590a;
+$secondary: #161616;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: $white;
+$body-color: $gray-900;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem;
+
+
+// Links
+//
+// Style anchor elements.
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+$emphasized-link-hover-darken-percentage: 15%;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px );
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px );
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$grid-row-columns: 6;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: 'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * .875;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 3.75; // ~60px
+$h2-font-size: $font-size-base * 2.75; // ~44px
+$h3-font-size: $font-size-base * 2; // ~32px
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$headings-margin-bottom: $spacer / 2;
+$headings-font-family: 'agencyr', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+$headings-color: null;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+
+$border-width: 1px;
+$border-color: $gray-300;
+
+$border-radius: .5rem;
+$border-radius-lg: 1rem;
+$border-radius-sm: .25rem;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-padding-y: .85rem;
+$input-btn-padding-x: 1.875rem;
+$input-btn-line-height: 1;
+
+
+$input-btn-padding-y-sm: .5rem;
+$input-btn-padding-x-sm: 1rem;
+
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+$btn-box-shadow: 0px 4px 20px -10px rgb($black, 0.75);
+
+$btn-border-radius: 2rem;
+$btn-border-radius-lg: 3rem;
+$btn-border-radius-sm: 1rem;
+
+// Forms
+$input-border-radius: $btn-border-radius;
+$input-border-radius-lg: $btn-border-radius-lg;
+$input-border-radius-sm: $btn-border-radius-sm;
+
+// Custom Forms
+$custom-select-border-radius: $btn-border-radius;

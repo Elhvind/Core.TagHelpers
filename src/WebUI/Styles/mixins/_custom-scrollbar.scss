@@ -1,0 +1,29 @@
+﻿@mixin custom-scrollbar($color, $value) {
+    .custom-scrollbar--#{$color} {
+        &::-webkit-scrollbar {
+            &-track {
+                background-color: rgba($value, .08);
+            }
+
+            &-thumb {
+                background-color: $value;
+
+                &:hover {
+                    background-color: darken($value, 5%);
+                }
+            }
+        }
+    }
+}
+
+@mixin custom-scrollbar-size($size, $border-radius) {
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+
+        &-track,
+        &-thumb {
+            @include border-radius($border-radius);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+﻿@mixin box-size($padding-y, $padding-x, $font-size, $border-radius, $shadow) {
+    @include font-size($font-size);
+    @include box-shadow($shadow);
+    @include border-radius($border-radius);
+
+    &__header {
+        padding: $padding-y $padding-x;
+        @include border-top-radius($border-radius);
+    }
+
+    &__body {
+        padding: $padding-x;
+    }
+
+    &__footer {
+        padding: $padding-y $padding-x;
+        @include border-bottom-radius($border-radius);
+    }
+}
