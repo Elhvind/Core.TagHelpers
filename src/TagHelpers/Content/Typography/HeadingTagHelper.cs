@@ -24,11 +24,32 @@ public class HeadingTagHelper : BootstrapTagHelperBase
     [HtmlAttributeName("display-level")]
     public DisplayLevel? DisplayLevel { get; set; }
 
+    /// <summary>
+    /// Changes the color of the heading.
+    /// </summary>
+    [HtmlAttributeName("color")]
+    public ThemeColor? Color { get; set; }
+
+    [HtmlAttributeName("href")]
+    public string? Href { get; set; }
+
     public override void Process(TagHelperContext context, TagHelperOutput output)
     {
         output.TagMode = TagMode.StartTagAndEndTag;
 
-        if (Imitate)
+        if (!string.IsNullOrEmpty(Href))
+        {
+            output.TagName = "a";
+            output.Attributes.SetAttribute("href", Href);
+            output.AddCssClasses(Level.ToString().ToLower());
+
+            if (!Imitate)
+            {
+                output.Attributes.SetAttribute("role", "heading");
+                output.Attributes.SetAttribute("aria-level", (int)Level);
+            }
+        }
+        else if (Imitate)
         {
             output.TagName = "p";
             output.AddCssClasses(Level.ToString().ToLower());
@@ -39,6 +60,9 @@ public class HeadingTagHelper : BootstrapTagHelperBase
         }
 
         output.AddCssClasses(GetDisplayClass());
+
+        if (Color.HasValue)
+            output.AddCssClasses(GetColorClassName("text", Color.Value));
     }
 
     private string GetDisplayClass()
