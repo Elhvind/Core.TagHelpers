@@ -1,0 +1,31 @@
+$page-footer-bg: $primary !default;
+$page-footer-color: color-yiq($page-footer-bg) !default;
+$page-footer-border-color: $border-color !default;
+$page-footer-link-color: color-yiq($page-footer-bg) !default;
+$page-footer-link-hover-color: darken($page-footer-link-color, 10%) !default;
+$page-footer-link-hover-decoration: underline !default;
+
+.page-footer {
+    background-color: $page-footer-bg;
+    color: $page-footer-color;
+    border-top: $border-width solid $page-footer-border-color;
+    padding: 2rem 0;
+
+    hr {
+        border-color: $page-footer-color;
+    }
+
+    p {
+        color: color-yiq($page-footer-bg);
+    }
+
+    a {
+        color: $page-footer-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $page-footer-link-hover-color;
+            text-decoration: $page-footer-link-hover-decoration;
+        }
+    }
+}

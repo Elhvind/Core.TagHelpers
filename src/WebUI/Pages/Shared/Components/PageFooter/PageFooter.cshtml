@@ -1,7 +1,31 @@
 ﻿@model PageFooterViewModel
 
-<footer class="border-top footer text-muted p-3">
+<footer class="page-footer">
 	<container>
+		<row>
+			<column md=4 class="mb-4">
+				<p class="mb-2">Col 1</p>
+				@foreach (var link in Model.Col1Links)
+				{
+					<a href="@link.Href" class="d-block mb-2">@link.Text</a>
+				}
+			</column>
+			<column md=4 class="mb-4">
+				<p class="mb-2">Col 2</p>
+				@foreach (var link in Model.Col2Links)
+				{
+					<a href="@link.Href" class="d-block mb-2">@link.Text</a>
+				}
+			</column>
+			<column md=4 class="mb-4">
+				<p class="mb-2">Col 3</p>
+				@foreach (var link in Model.Col3Links)
+				{
+					<a href="@link.Href" class="d-block mb-2">@link.Text</a>
+				}
+			</column>
+		</row>
+		<hr class="mt-0 mb-4" />
 		&copy; 2022 - WebUI - <a asp-area="" asp-page="/Privacy">Privacy</a>
 	</container>
 </footer>

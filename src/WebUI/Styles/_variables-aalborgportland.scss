@@ -126,6 +126,8 @@ $font-weight-bolder: bolder;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.4;
 
+$text-muted: #888;
+
 $h1-font-size: $font-size-base * 3.125; // ~50px
 $h2-font-size: $font-size-base * 2.25;
 $h3-font-size: $font-size-base * 1.25;
@@ -166,3 +168,19 @@ $input-btn-padding-x-sm: .5rem;
 
 $input-btn-padding-y-lg: .875rem;
 $input-btn-padding-x-lg: 1.25rem;
+
+
+// Custom
+//
+//
+
+$page-header-brand: 'Aalborg Portland';
+$page-header-height: 61px;
+$page-header-bg: $primary;
+$page-header-border-color: $primary;
+$page-header-link-color: $white;
+$page-header-link-hover-color: $white;
+$page-header-link-hover-decoration: none;
+
+$page-footer-bg: $primary;
+$page-footer-border-color: $primary;

@@ -21,17 +21,17 @@ $enable-deprecation-messages: true;
 //
 
 // Grays
-$white: #000;
-$gray-100: #252525;
-$gray-200: #343a40;
-$gray-300: #495057;
-$gray-400: #6c757d;
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
 $gray-500: #adb5bd;
-$gray-600: #ced4da;
-$gray-700: #dee2e6;
-$gray-800: #e9ecef;
-$gray-900: #f8f9fa;
-$black: #fff;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #252525;
+$black: #000;
 
 // Colors
 $blue: #007bff;
@@ -48,12 +48,12 @@ $cyan: #28aadc;
 // Settings
 $theme-color-interval: 8%;
 $yiq-contrasted-threshold: 200;
-$yiq-text-light: #212738;
-$yiq-text-dark: #999;
+$yiq-text-light: $white;
+$yiq-text-dark: #212738;
 
 // Theme
 $primary: #44d62c;
-$secondary: #111111;
+$secondary: #333;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
@@ -65,8 +65,8 @@ $dark: #eee;
 // Body
 //
 // Settings for the `<body>` element.
-$body-bg: #222;
-$body-color: $yiq-text-dark;
+$body-bg: $black;
+$body-color: color-yiq($body-bg);
 
 $navbar-dark-active-color: $body-color;
 
@@ -128,6 +128,8 @@ $font-weight-bolder: bolder;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.4;
 
+$text-muted: #888;
+
 $h1-font-size: $font-size-base * 3.125; // ~50px
 $h2-font-size: $font-size-base * 2.25;
 $h3-font-size: $font-size-base * 1.25;
@@ -151,9 +153,9 @@ $line-height-sm: 1.4;
 $border-width: 1px;
 $border-color: $gray-300;
 
-$border-radius: 0.1875rem;
-$border-radius-lg: 0.3rem;
-$border-radius-sm: 0.1rem;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
 $box-shadow: 0 2px 5px #111;
 
@@ -175,6 +177,34 @@ $input-btn-padding-x-lg: 1.25rem;
 // Forms
 $input-bg: $body-bg;
 
+// Jumbo
+$jumbotron-bg: #252525;
 
 // Modals
 $modal-content-bg: $body-bg;
+
+// Navbar
+$navbar-nav-link-padding-x: 2rem;
+
+
+// Custom
+//
+//
+
+$page-header-brand: 'Razer';
+$page-header-height: 61px;
+$page-header-bg: $black;
+$page-header-border-color: $primary;
+$page-header-link-color: $text-muted;
+$page-header-link-hover-color: $white;
+
+$page-footer-bg: #111111;
+$page-footer-color: $text-muted;
+$page-footer-border-color: $page-footer-bg;
+$page-footer-link-color: $text-muted;
+$page-footer-link-hover-color: $white;
+$page-footer-link-hover-decoration: underline;
+
+$bg-content: #252525;
+
+$card-bg: $body-bg;

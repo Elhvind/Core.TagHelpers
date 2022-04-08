@@ -30,7 +30,7 @@ $gray-500: #adb5bd;
 $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
-$gray-900: #212529;
+$gray-900: #181818;
 $black: #000;
 
 // Colors
@@ -59,7 +59,7 @@ $info: $cyan;
 $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
-$dark: $gray-800;
+$dark: $gray-900;
 
 
 // Body
@@ -185,3 +185,17 @@ $input-border-radius-sm: $btn-border-radius-sm;
 
 // Custom Forms
 $custom-select-border-radius: $btn-border-radius;
+
+
+// Custom
+//
+//
+
+$page-header-brand: 'Commentor';
+$page-header-bg: $body-bg;
+$page-header-border-color: $primary;
+$page-header-link-color: color-yiq($page-header-bg);
+$page-header-link-hover-decoration: none;
+
+$page-footer-bg: $dark;
+$page-footer-border-color: $dark;

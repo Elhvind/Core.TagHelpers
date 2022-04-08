@@ -1,0 +1,32 @@
+$page-header-brand: 'Bootstrap' !default;
+$page-header-height: null !default;
+$page-header-bg: $primary !default;
+$page-header-color: color-yiq($page-header-bg) !default;
+$page-header-border-color: $border-color !default;
+$page-header-link-color: color-yiq($page-header-bg) !default;
+$page-header-link-hover-color: darken($page-header-link-color, 10%) !default;
+$page-header-link-hover-decoration: underline !default;
+
+.page-header {
+    height: $page-header-height;
+    background-color: $page-header-bg;
+    color: $page-header-color;
+    border-bottom: $border-width solid $page-header-border-color;
+
+    .navbar-brand {
+        &::before {
+            content: $page-header-brand;
+            display: block;
+        }
+    }
+
+    a {
+        color: $page-header-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $page-header-link-hover-color;
+            text-decoration: $page-header-link-hover-decoration;
+        }
+    }
+}
