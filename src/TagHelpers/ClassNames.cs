@@ -94,6 +94,21 @@ public static class ClassNames
         public const string ButtonToolbar = "btn-toolbar";
     }
 
+    public static class Cards
+    {
+        public const string Card = "card";
+        public const string CardHeader = "card-header";
+        public const string CardBody = "card-body";
+        public const string CardFooter = "card-footer";
+        public const string CardImage = "card-img";
+        public const string CardImageOverlay = "card-img-overlay";
+        public const string CardImageTop = "card-img-top";
+        public const string CardImageBottom = "card-img-bottom";
+        public const string CardGroup = "card-group";
+        public const string CardDeck = "card-deck";
+        public const string CardColumns = "card-columns";
+    }
+
     public static class Cols
     {
         public const string Col = "col";
